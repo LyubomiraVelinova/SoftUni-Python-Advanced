@@ -1,0 +1,15 @@
+from project.product import Product
+
+
+class Food(Product):
+    name: str
+    price: float
+    _grams: float
+
+    def __init__(self, name: str, price: float, grams: float):
+        super().__init__(name, price)
+        self._grams = grams
+
+    @property
+    def grams(self):
+        return self._grams
