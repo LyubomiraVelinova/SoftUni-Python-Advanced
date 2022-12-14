@@ -1,2 +1,2 @@
-# Python-Advanced
-Python Advanced and Python OOP
+# Python Advanced Module
+Includes Python Advanced Course and Python OOP Course
