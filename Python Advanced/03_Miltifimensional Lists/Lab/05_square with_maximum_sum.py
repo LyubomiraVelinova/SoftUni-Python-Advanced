@@ -2,9 +2,9 @@ from itertools import chain
 
 
 def read_matrix():
-    rows, cols = [int(x) for x in input().split(", ")]
-    matrix = [[int(x) for x in input().split(", ")] for i in range(rows)]
-    return matrix
+    rows, columns = [int(num) for num in input().split(", ")]
+    main_matrix = [[int(num) for num in input().split(", ")] for _ in range(rows)]
+    return main_matrix
 
 
 def get_squares(matrix):
@@ -17,7 +17,6 @@ def get_squares(matrix):
                 [matrix[i + 1][j], matrix[i + 1][j + 1]]
             ]
             squares.append(square)
-
     return squares
 
 
@@ -39,6 +38,6 @@ def get_max_square(squares):
 matrix = read_matrix()
 squares = get_squares(matrix)
 max_square = get_max_square(squares)
-
-print("\n".join([" ".join(map(str, row)) for row in max_square]))
+print([' '.join(map(str, row)) for row in max_square])
+print('\n'.join([' '.join(map(str, row)) for row in max_square]))
 print(get_sum_of_matrix(max_square))
