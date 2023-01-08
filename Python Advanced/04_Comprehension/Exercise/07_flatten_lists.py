@@ -1,0 +1,1 @@
+print(" ".join(list(reversed([line.strip() for line in input().split("|")]))))
