@@ -1,7 +1,7 @@
 def is_palindrome(word):
     if len(word) == 0:
         return True
-    elif len(word) == 0:
+    elif len(word) == 1:
         return True
 
     if word[0] == word[-1] and is_palindrome(word[1:-1]):

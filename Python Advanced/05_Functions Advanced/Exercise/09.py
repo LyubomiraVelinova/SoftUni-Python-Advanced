@@ -7,8 +7,17 @@ def func_executor(*args):
 
     return result
 
+# def func_executor(*args):
+#     result = []
+#     for arg in args:
+#         fn = arg[0]
+#         tuple = arg[1]
+#         result.append(fn(*tuple))
+#     return result
+
 def sum_numbers(num1, num2):
     return num1 + num2
+
 
 def multiply_numbers(num1, num2):
     return num1 * num2
