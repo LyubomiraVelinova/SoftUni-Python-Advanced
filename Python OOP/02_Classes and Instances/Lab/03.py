@@ -18,6 +18,7 @@ class Glass:
     def info(self):
         return f"{Glass.capacity - self.content} ml left"
 
+
 glass = Glass()
 print(glass.fill(100))
 print(glass.fill(200))
